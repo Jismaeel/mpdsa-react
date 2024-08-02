@@ -167,7 +167,7 @@ const SideNav = () => {
                   <ul className="py-2 text-sm text-gray-200">
                     <li>
                       <a
-                        href="/SkylasDrivingSchool"
+                        href="./SkylasDrivingSchool"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Skylas Driving School

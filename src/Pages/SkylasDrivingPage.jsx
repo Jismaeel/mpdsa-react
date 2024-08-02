@@ -78,7 +78,7 @@ const SkylasDrivingPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:1010/submit-bookingskylas",
+        "https://node-server-c9zt.onrender.com/submit-bookingskylas",
         data,
         {
           headers: {

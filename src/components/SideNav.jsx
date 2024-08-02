@@ -167,7 +167,7 @@ const SideNav = () => {
                   <ul className="py-2 text-sm text-gray-200">
                     <li>
                       <a
-                        href="./Skylas Driving School.html"
+                        href="/SkylasDrivingSchool"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Skylas Driving School
@@ -175,7 +175,7 @@ const SideNav = () => {
                     </li>
                     <li>
                       <a
-                        href="./Qs Driving School.html"
+                        href=""
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Q's Driving Schools
@@ -183,7 +183,7 @@ const SideNav = () => {
                     </li>
                     <li>
                       <a
-                        href="./Two lilies Driving School.html"
+                        href=""
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Two Lillies Driving Schools
@@ -191,7 +191,7 @@ const SideNav = () => {
                     </li>
                     <li>
                       <a
-                        href="./Eddies Driving School.html"
+                        href=""
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Eddies Driving School
@@ -199,7 +199,7 @@ const SideNav = () => {
                     </li>
                     <li>
                       <a
-                        href="./Craigs Driving School.html"
+                        href=""
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Craigs Driving School
@@ -237,7 +237,8 @@ const SideNav = () => {
               </NavLink>
             </li>
             <li>
-              <Link smooth
+              <Link
+                smooth
                 to="#Contactus"
                 className="flex items-center p-2 text-white rounded-lg hover:bg-gray-100 hover:text-black group"
               >

@@ -36,7 +36,7 @@ const MembershipPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:1010/submit-membership", // Directly using the endpoint
+        "https://node-server-c9zt.onrender.com/submit-membership", // Directly using the endpoint
         data,
         {
           headers: {

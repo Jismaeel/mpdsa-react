@@ -166,12 +166,12 @@ const SideNav = () => {
                 <div className="z-10 divide-y divide-gray-100 rounded-lg shadow w-56 bg-gray-700">
                   <ul className="py-2 text-sm text-gray-200">
                     <li>
-                      <a
+                      <Link
                         href="/SkylasDrivingSchool"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Skylas Driving School
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a

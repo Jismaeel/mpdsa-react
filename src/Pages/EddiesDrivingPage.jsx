@@ -1,9 +1,9 @@
 
 const EddiesDrivingPage = () => {
   return (
-    <div>
+    <>
       
-    </div>
+    </>
   )
 }
 

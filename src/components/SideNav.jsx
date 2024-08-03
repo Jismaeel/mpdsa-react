@@ -167,51 +167,51 @@ const SideNav = () => {
                   <ul className="py-2 text-sm text-gray-200">
                     <li>
                       <Link
-                        href="/SkylasDrivingSchool"
+                        to="/SkylasDrivingSchool"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Skylas Driving School
                       </Link>
                     </li>
                     <li>
-                      <a
-                        href=""
+                      <Link
+                        to="/QDrivingSchool"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Q's Driving Schools
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href=""
+                      <Link
+                        to="/TwoliliesDrivingSchool"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Two Lillies Driving Schools
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a
-                        href=""
+                        to="/EddiesDrivingSchool"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Eddies Driving School
                       </a>
                     </li>
                     <li>
-                      <a
-                        href=""
+                      <Link
+                        to="/CraigsDrivingSchool"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Craigs Driving School
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href=""
+                      <Link
+                        to="/EbenezerDrivingSchool"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Ebenezar Driving School
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

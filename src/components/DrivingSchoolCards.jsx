@@ -23,11 +23,7 @@ const DrivingSchoolCards = () => {
             <div className="block rounded-lg bg-white shadow-xl text-left">
               {/* <!-- Card image --> */}
               <a href="#!">
-                <img
-                  className="rounded-t-lg"
-                  src={Skylas}
-                  alt=""
-                />
+                <img className="rounded-t-lg" src={Skylas} alt="" />
               </a>
 
               {/* <!-- Card body --> */}
@@ -57,11 +53,7 @@ const DrivingSchoolCards = () => {
             <div className="block rounded-lg bg-white shadow-xl text-left">
               {/* <!-- Card image --> */}
               <a href="#!">
-                <img
-                  className="rounded-t-lg w-auto h-auto"
-                  src={Qs}
-                  alt=""
-                />
+                <img className="rounded-t-lg w-auto h-auto" src={Qs} alt="" />
               </a>
 
               {/* <!-- Card body --> */}
@@ -77,12 +69,12 @@ const DrivingSchoolCards = () => {
                 </p>
 
                 {/* <!-- Button --> */}
-                <a
-                  href="./Qs Driving School.html"
-                  className="pointer-events-none text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                <Link
+                  to="/QDrivingSchool"
+                  className=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                 >
                   Book now
-                </a>
+                </Link>
               </div>
             </div>
             {/* <!-- Card --> */}
@@ -91,11 +83,7 @@ const DrivingSchoolCards = () => {
             <div className="block rounded-lg bg-white shadow-xl text-left">
               {/* <!-- Card image --> */}
               <a href="#!">
-                <img
-                  className="rounded-t-lg"
-                  src={lilies}
-                  alt=""
-                />
+                <img className="rounded-t-lg" src={lilies} alt="" />
               </a>
 
               {/* <!-- Card body --> */}
@@ -111,12 +99,12 @@ const DrivingSchoolCards = () => {
                 </p>
 
                 {/* <!-- Button --> */}
-                <a
-                  href="./Two lilies Driving School.html"
-                  className="pointer-events-none text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                <Link
+                  to="/TwoliliesDrivingSchool"
+                  className=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                 >
                   Book now
-                </a>
+                </Link>
               </div>
             </div>
             {/* <!-- Card --> */}
@@ -125,11 +113,7 @@ const DrivingSchoolCards = () => {
             <div className="block rounded-lg bg-white shadow-xl text-left">
               {/* <!-- Card image --> */}
               <a href="#!">
-                <img
-                  className="rounded-t-lg"
-                  src={Eddies}
-                  alt=""
-                />
+                <img className="rounded-t-lg" src={Eddies} alt="" />
               </a>
 
               {/* <!-- Card body --> */}
@@ -145,12 +129,12 @@ const DrivingSchoolCards = () => {
                 </p>
 
                 {/* <!-- Button --> */}
-                <a
-                  href="./Eddies Driving School.html"
-                  className="pointer-events-none text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                <Link
+                  to="/EddiesDrivingSchool"
+                  className=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                 >
                   Book now
-                </a>
+                </Link>
               </div>
             </div>
             {/* <!-- Card --> */}
@@ -159,11 +143,7 @@ const DrivingSchoolCards = () => {
             <div className="block rounded-lg bg-white shadow-xl text-left">
               {/* <!-- Card image --> */}
               <a href="#!">
-                <img
-                  className="rounded-t-lg"
-                  src={Craigs}
-                  alt=""
-                />
+                <img className="rounded-t-lg" src={Craigs} alt="" />
               </a>
 
               {/* <!-- Card body --> */}
@@ -179,12 +159,12 @@ const DrivingSchoolCards = () => {
                 </p>
 
                 {/* <!-- Button --> */}
-                <a
-                  href="./Craigs Driving School.html"
-                  className="pointer-events-none text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                <Link
+                  to="/CraigsDrivingSchool"
+                  className=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                 >
                   Book now
-                </a>
+                </Link>
               </div>
             </div>
             {/* <!-- Card --> */}
@@ -193,11 +173,7 @@ const DrivingSchoolCards = () => {
             <div className="block rounded-lg bg-white shadow-xl text-left">
               {/* <!-- Card image --> */}
               <a href="#!">
-                <img
-                  className="rounded-t-lg"
-                  src={Ebenezer}
-                  alt=""
-                />
+                <img className="rounded-t-lg" src={Ebenezer} alt="" />
               </a>
 
               {/* <!-- Card body --> */}
@@ -213,12 +189,12 @@ const DrivingSchoolCards = () => {
                 </p>
 
                 {/* <!-- Button --> */}
-                <a
-                  href=""
-                  className="pointer-events-none text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                <Link
+                  to="/EbenezerDrivingSchool"
+                  className=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                 >
                   Book now
-                </a>
+                </Link>
               </div>
             </div>
             {/* <!-- Card --> */}

@@ -1,5 +1,128 @@
+import CraigDS from "../img/craig ds.webp";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
+import { HashLink as Link } from "react-router-hash-link";
+import Loading from "../components/Loading";
 
 const CraigsDrivingPage = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Define state variables for each form field
+  const [firstname, setFirstname] = useState("");
+  const [surname, setSurname] = useState("");
+  const [email, setEmail] = useState("");
+  const [phonenumber, setPhonenumber] = useState("");
+  const [transmission, setTransmission] = useState("");
+  const [courseOption, setCourseOption] = useState("");
+  const [packageOption, setPackageOption] = useState("");
+  const [carHire, setCarHire] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading delay
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Adjust the delay as needed
+  }, []);
+
+  if (isLoading) {
+    return <Loading loadimg={CraigDS} />;
+  }
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  // Handle input changes
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    if (type === "checkbox") {
+      setCarHire(checked);
+    } else {
+      switch (name) {
+        case "firstname":
+          setFirstname(value);
+          break;
+        case "surname":
+          setSurname(value);
+          break;
+        case "email":
+          setEmail(value);
+          break;
+        case "phonenumber":
+          setPhonenumber(value);
+          break;
+        case "transmission":
+          setTransmission(value);
+          setCourseOption("");
+          setPackageOption("");
+          setCarHire(false);
+          break;
+        case "courseOption":
+          setCourseOption(value);
+          break;
+        case "packageOption":
+          setPackageOption(value);
+          break;
+        default:
+          break;
+      }
+    }
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const data = {
+      firstname,
+      surname,
+      email,
+      phonenumber,
+      transmission,
+      courseOption,
+      packageOption,
+      carHire,
+    };
+
+    try {
+      const response = await axios.post(
+        "https://node-server-c9zt.onrender.com/submit-bookingskylas",
+        data,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      console.log(response.data);
+      toast.success("Submission successful!");
+
+      // Reset form fields
+      setFirstname("");
+      setSurname("");
+      setEmail("");
+      setPhonenumber("");
+      setTransmission("");
+      setCourseOption("");
+      setPackageOption("");
+      setCarHire(false);
+    } catch (error) {
+      console.error("Error:", error);
+      toast.error(
+        error.response?.data?.message ||
+          "An error occurred during submission. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       <nav className="border-gray-200 bg-gray-900">
@@ -8,7 +131,7 @@ const CraigsDrivingPage = () => {
             href=""
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src={sdtrans} className="h-auto w-36" alt="SKYLAS Logo" />
+            <img src={CraigDS} className="h-auto w-36" alt="SKYLAS Logo" />
           </a>
           <button
             onClick={toggleMenu}
@@ -95,15 +218,15 @@ const CraigsDrivingPage = () => {
               Sky is the limit
             </a>
             <h1 className="text-white text-3xl md:text-5xl font-extrabold mb-2">
-              Book your next lesson with Skylas Driving School
+              Book your next lesson with Craigs Driving School
             </h1>
             <p className="text-lg font-normal text-gray-400 mb-6">
-              Skyla's Driving School is renowned for its top-notch instruction,
-              focusing on safe driving practices for learners of all levels.
-              Their experienced instructors and tailored courses ensure students
-              gain confidence and skill behind the wheel. With a commitment to
-              excellence, Skyla's aims to empower drivers with the knowledge and
-              abilities needed for safe navigation on the road.
+              Craig's Driving School is a reputable institution providing
+              quality driving instruction services. With a focus on safety and
+              professionalism, the school offers tailored courses for learners
+              at various skill levels. Experienced instructors at Craig's
+              Driving School ensure that students receive comprehensive training
+              to become confident and responsible drivers.
             </p>
           </div>
         </div>
@@ -115,7 +238,7 @@ const CraigsDrivingPage = () => {
               href="#"
               className="flex items-center mb-3 text-2xl font-semibold text-white"
             >
-              <img className="w-40 h-auto mr-2" src={sdtrans} alt="logo" />
+              <img className="w-40 h-auto mr-2" src={CraigDS} alt="logo" />
             </a>
             <div className="w-full rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
               <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -426,8 +549,48 @@ const CraigsDrivingPage = () => {
           </div>
         </div>
       </section>
+
+      <footer className=" bg-gray-900">
+        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <a
+              href="/"
+              className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            >
+              <img src={CraigDS} className="w-32 h-auto" alt="msdsa Logo" />
+            </a>
+            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium  sm:mb-0 text-gray-400">
+              <li>
+                <Link
+                  smooth
+                  to="#Aboutus"
+                  className="hover:underline me-4 md:me-6"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <a className="hover:underline me-4 md:me-6">Why Choose us</a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline me-4 md:me-6">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <hr className="my-6  sm:mx-auto border-gray-700 lg:my-8" />
+          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            © 2024{" "}
+            <a href="/" className="hover:underline">
+              The Mitchells Plain Drivivng School™
+            </a>
+            . All Rights Reserved.
+          </span>
+        </div>
+      </footer>
     </>
   );
-}
+};
 
-export default CraigsDrivingPage
+export default CraigsDrivingPage;

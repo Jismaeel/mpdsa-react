@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import sdtrans from "../img/sd trans.webp";
 import { HashLink as Link } from "react-router-hash-link";
+import Loading from "../components/Loading";
+
 
 const SkylasDrivingPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,6 +19,19 @@ const SkylasDrivingPage = () => {
   const [packageOption, setPackageOption] = useState("");
   const [carHire, setCarHire] = useState(false);
   const [loading, setLoading] = useState(false);
+
+   const [isLoading, setIsLoading] = useState(true);
+
+   useEffect(() => {
+     // Simulate loading delay
+     setTimeout(() => {
+       setIsLoading(false);
+     }, 2000); // Adjust the delay as needed
+   }, []);
+
+   if (isLoading) {
+     return <Loading loadimg={sdtrans} />;
+   }
 
    const toggleMenu = () => {
      setMenuOpen(!menuOpen);
@@ -519,7 +534,7 @@ const SkylasDrivingPage = () => {
           </div>
         </div>
       </div>
-      
+
       <section>
         <div className="block w-full shrink-0 grow-0 basis-auto">
           <div className="h-[500px] w-full">
@@ -536,6 +551,46 @@ const SkylasDrivingPage = () => {
           </div>
         </div>
       </section>
+
+      <footer className=" bg-gray-900">
+        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <a
+              href="/"
+              className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            >
+              <img src={sdtrans} className="w-32 h-auto" alt="msdsa Logo" />
+            </a>
+            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium  sm:mb-0 text-gray-400">
+              <li>
+                <Link
+                  smooth
+                  to="#Aboutus"
+                  className="hover:underline me-4 md:me-6"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <a className="hover:underline me-4 md:me-6">Why Choose us</a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline me-4 md:me-6">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <hr className="my-6  sm:mx-auto border-gray-700 lg:my-8" />
+          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            © 2024{" "}
+            <a href="/" className="hover:underline">
+              The Mitchells Plain Drivivng School™
+            </a>
+            . All Rights Reserved.
+          </span>
+        </div>
+      </footer>
     </>
   );
 };

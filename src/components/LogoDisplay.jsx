@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import Skylas from "../img/sd trans.webp";
-import Ebenezer from "../img/ebaneezar.webp";
-import Eddies from "../img/eddies ds.webp";
-import lilies from "../img/lilies.webp";
-import Craigs from "../img/craig ds.webp";
-import Qs from "../img/qs ds.webp";
+import Skylas from "../assets/img/sd trans.webp";
+import Ebenezer from "../assets/img/ebaneezar.webp";
+import Eddies from "../assets/img/eddies ds.webp";
+import lilies from "../assets/img/lilies.webp";
+import Craigs from "../assets/img/craig ds.webp";
+import Qs from "../assets/img/qs ds.webp";
 
 const LogoDisplay = () => {
   return (

@@ -1,9 +1,9 @@
-import Skylas from "../img/sd trans ds.webp";
-import Ebenezer from "../img/ebaneezar ds.webp";
-import Eddies from "../img/eddies ds1.webp";
-import lilies from "../img/lilies ds.webp";
-import Craigs from "../img/craig ds1.webp";
-import Qs from "../img/qs ds1.webp";
+import Skylas from "../assets/img/sd trans ds.webp";
+import Ebenezer from "../assets/img/ebaneezar ds.webp";
+import Eddies from "../assets/img/eddies ds1.webp";
+import lilies from "../assets/img/lilies ds.webp";
+import Craigs from "../assets/img/craig ds1.webp";
+import Qs from "../assets/img/qs ds1.webp";
 import { Link } from "react-router-dom";
 
 

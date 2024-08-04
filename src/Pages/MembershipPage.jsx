@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";;
-import msdsa1 from "../img/mpddsa-02 1.webp";
+import msdsa1 from "../assets/img/mpddsa-02 1.webp";
 import { HashLink as Link } from "react-router-hash-link";
 
 const MembershipPage = () => {

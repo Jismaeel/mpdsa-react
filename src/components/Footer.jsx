@@ -1,4 +1,4 @@
-import msdsa1 from "../img/mpddsa-02 1.webp";
+import msdsa1 from "../assets/img/mpddsa-02 1.webp";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Footer = () => {

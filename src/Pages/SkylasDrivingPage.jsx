@@ -1,7 +1,7 @@
 import { useState ,useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-import sdtrans from "../img/sd trans.webp";
+import sdtrans from "../assets/img/sd trans.webp";
 import { HashLink as Link } from "react-router-hash-link";
 import Loading from "../components/Loading";
 

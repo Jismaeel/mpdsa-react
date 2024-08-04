@@ -1,4 +1,4 @@
-import EbenerzerDS from "../img/ebaneezar.webp";
+import EbenerzerDS from "../assets/img/ebaneezar.webp";
 import { useState ,useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";

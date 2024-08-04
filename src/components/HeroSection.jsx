@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const HeroSection = () => {
   return (
     <>
-      <div class="sm:ml-64 pt-16">
+      <div className="sm:ml-64 pt-16">
         <section className="bg-white">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-16 lg:px-12">
             <a

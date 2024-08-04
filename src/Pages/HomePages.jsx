@@ -10,7 +10,7 @@ import FAQ from "../components/FAQ";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import Loading from "../components/Loading";
-import msdsa1 from "../img/mpddsa-02 1.webp";
+import msdsa1 from "../assets/img/mpddsa-02 1.webp";
 
 const HomePages = () => {
   const [isLoading, setIsLoading] = useState(true);

@@ -1,9 +1,10 @@
-import CraigDS from "../img/craig ds.webp";
+import CraigDS from "../assets/img/craig ds.webp";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { HashLink as Link } from "react-router-hash-link";
 import Loading from "../components/Loading";
+
 
 const CraigsDrivingPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);

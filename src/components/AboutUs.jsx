@@ -1,4 +1,4 @@
-import Msdsa2 from "../img/mpddsa-01.webp";
+import Msdsa2 from "../assets/img/mpddsa-01.webp";
 
 const AboutUs = () => {
   return (

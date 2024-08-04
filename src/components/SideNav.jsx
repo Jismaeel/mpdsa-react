@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { HashLink as Link,} from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
-import msdsa1 from "../img/mpddsa-02 1.webp";
+import msdsa1 from "../assets/img/mpddsa-02 1.webp";
 
 const SideNav = () => {
   const [navOpen, setNavOpen] = useState(false);

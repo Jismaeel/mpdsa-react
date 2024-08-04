@@ -1,4 +1,4 @@
-import QDS from "../img/lilies.webp";
+import QDS from "../assets/img/lilies.webp";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";

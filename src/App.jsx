@@ -29,7 +29,7 @@ const App = () => {
           path="/EbenezerDrivingSchool"
           element={<EbenezerDrivingPage />}
         />
-        <Route path="#" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

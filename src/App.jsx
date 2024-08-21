@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NotFound from "./Pages/NotFound";
 import MembershipPage from "./Pages/MembershipPage";
 import HomePages from "./Pages/HomePages";
 import { ToastContainer } from "react-toastify";
@@ -14,17 +15,21 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index="/" element={<HomePages />} />
+        <Route path="/" element={<HomePages />} />
         <Route path="/member" element={<MembershipPage />} />
         <Route path="/SkylasDrivingSchool" element={<SkylasDrivingPage />} />
         <Route path="/CraigsDrivingSchool" element={<CraigsDrivingPage />} />
         <Route path="/QDrivingSchool" element={<QDrivingPage />} />
-        <Route path="/TwoliliesDrivingSchool" element={<TwoLilliesDrivingPage />} />
+        <Route
+          path="/TwoliliesDrivingSchool"
+          element={<TwoLilliesDrivingPage />}
+        />
         <Route path="/EddiesDrivingSchool" element={<EddiesDrivingPage />} />
         <Route
           path="/EbenezerDrivingSchool"
           element={<EbenezerDrivingPage />}
         />
+        <Route path="#" element={<NotFound />} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

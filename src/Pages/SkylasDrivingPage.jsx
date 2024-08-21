@@ -236,7 +236,7 @@ const SkylasDrivingPage = () => {
 
       <PromoCards
         PromoImg={img}
-        WALink={"https://api.whatsapp.com/send?phone=0721941247"}
+        WALink={"https://api.whatsapp.com/send?phone=+27721941247"}
         PromoName={"Whitney Wednesday"}
         Lessons={"10 lessons + 2 free"}
         Price={"R1650"}

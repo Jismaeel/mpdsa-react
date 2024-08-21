@@ -1,10 +1,11 @@
-import { useState ,useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import sdtrans from "../assets/img/sd trans.webp";
 import { HashLink as Link } from "react-router-hash-link";
 import Loading from "../components/Loading";
-
+import PromoCards from "../components/PromoCards";
+import img from "../assets/img/promo.jpg";
 
 const SkylasDrivingPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,23 +21,22 @@ const SkylasDrivingPage = () => {
   const [carHire, setCarHire] = useState(false);
   const [loading, setLoading] = useState(false);
 
-   const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-   useEffect(() => {
-     // Simulate loading delay
-     setTimeout(() => {
-       setIsLoading(false);
-     }, 2000); // Adjust the delay as needed
-   }, []);
+  useEffect(() => {
+    // Simulate loading delay
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Adjust the delay as needed
+  }, []);
 
-   if (isLoading) {
-     return <Loading loadimg={sdtrans} />;
-   }
+  if (isLoading) {
+    return <Loading loadimg={sdtrans} />;
+  }
 
-   const toggleMenu = () => {
-     setMenuOpen(!menuOpen);
-   };
-
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   // Handle input changes
   const handleInputChange = (e) => {
@@ -233,6 +233,15 @@ const SkylasDrivingPage = () => {
           </div>
         </div>
       </section>
+
+      <PromoCards
+        PromoImg={img}
+        WALink={"https://api.whatsapp.com/send?phone=0721941247"}
+        PromoName={"Whitney Wednesday"}
+        Lessons={"10 lessons + 2 free"}
+        Price={"R1650"}
+      />
+
       <div className="bg-gray-900">
         <div className="bg-gray-900 py-10">
           <div className="flex flex-col items-center px-6 mx-auto">

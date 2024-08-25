@@ -4,6 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { HashLink as Link } from "react-router-hash-link";
 import Loading from "../components/Loading";
+import { Helmet } from "react-helmet-async";
 
 
 const TwoLilliesDrivingPage = () => {
@@ -126,6 +127,23 @@ const TwoLilliesDrivingPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Two Lillies Driving School-Book Your Lessons</title>
+        <meta
+          name="description"
+          content="Book driving lessons with Two Lillies Driving School in Mitchells Plain. Safe and confident driving with experienced instructors."
+        />
+        <meta
+          name="keywords"
+          content="driving lessons, Two Lillies Driving School, Mitchells Plain, driving instructor, learner driver"
+        />
+        <meta name="author" content="Two Lillies Driving School" />
+        <link
+          rel="canonical"
+          href="https://mpdsa.online/TwoliliesDrivingSchool"
+        />
+      </Helmet>
+
       <nav className="border-gray-200 bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a

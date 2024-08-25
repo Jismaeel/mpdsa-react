@@ -6,6 +6,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import Loading from "../components/Loading";
 import PromoCards from "../components/PromoCards";
 import img from "../assets/img/promo.jpg";
+import { Helmet } from "react-helmet-async";
 
 const SkylasDrivingPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -126,7 +127,21 @@ const SkylasDrivingPage = () => {
   };
 
   return (
-    <>
+    <div>
+      <Helmet>
+        <title>Skylas Driving School-Book Your Lessons</title>
+        <meta
+          name="description"
+          content="Book driving lessons with Skylas Driving School in Mitchells Plain. Safe and confident driving with experienced instructors."
+        />
+        <meta
+          name="keywords"
+          content="driving lessons, Skylas Driving School, Mitchells Plain, driving instructor, learner driver"
+        />
+        <meta name="author" content="Skylas Driving School" />
+        <link rel="canonical" href="https://mpdsa.online/SkylasDrivingSchool" />
+      </Helmet>
+
       <nav className="border-gray-200 bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
@@ -600,7 +615,7 @@ const SkylasDrivingPage = () => {
           </span>
         </div>
       </footer>
-    </>
+    </div>
   );
 };
 

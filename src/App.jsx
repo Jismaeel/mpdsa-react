@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import NotFound from "./Pages/NotFound";
 import MembershipPage from "./Pages/MembershipPage";
 import HomePages from "./Pages/HomePages";
@@ -15,7 +15,7 @@ import { HelmetProvider } from "react-helmet-async";
 const App = () => {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<HomePages />} />
           <Route path="/member" element={<MembershipPage />} />
@@ -34,7 +34,7 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <ToastContainer />
-      </BrowserRouter>
+      </Router>
     </HelmetProvider>
   );
 };

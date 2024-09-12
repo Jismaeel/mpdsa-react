@@ -4,8 +4,7 @@ import { toast } from "react-toastify";
 import sdtrans from "../assets/img/sd trans.webp";
 import { HashLink as Link } from "react-router-hash-link";
 import Loading from "../components/Loading";
-import PromoCards from "../components/PromoCards";
-import img from "../assets/img/promo.jpg";
+
 import { Helmet } from "react-helmet-async";
 
 const SkylasDrivingPage = () => {
@@ -249,13 +248,7 @@ const SkylasDrivingPage = () => {
         </div>
       </section>
 
-      <PromoCards
-        PromoImg={img}
-        WALink={"https://api.whatsapp.com/send?phone=+27721941247"}
-        PromoName={"Whitney Wednesday"}
-        Lessons={"10 lessons + 2 free"}
-        Price={"R1650"}
-      />
+    
 
       <div className="bg-gray-900">
         <div className="bg-gray-900 py-10">

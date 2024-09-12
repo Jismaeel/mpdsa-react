@@ -14,6 +14,7 @@ import msdsa1 from "../assets/img/mpddsa-02 1.webp";
 
 const HomePages = () => {
   const [isLoading, setIsLoading] = useState(true);
+ 
 
   useEffect(() => {
     // Simulate loading delay
@@ -22,10 +23,10 @@ const HomePages = () => {
     }, 2000); // Adjust the delay as needed
   }, []);
 
-   if (isLoading) {
-     return <Loading loadimg={msdsa1} />;
-   }
-   
+  if (isLoading) {
+    return <Loading loadimg={msdsa1} />;
+  }
+
   return (
     <>
       <SideNav />

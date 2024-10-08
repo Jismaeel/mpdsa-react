@@ -173,22 +173,22 @@ const SideNav = () => {
                         Skylas Driving School
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link
                         to="/QDrivingSchool"
-                        className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
+                        className="block px-4 py-2 hover:bg-gray-600 hover:text-white "
                       >
                         Q's Driving Schools
                       </Link>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <Link
                         to="/TwoliliesDrivingSchool"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Two Lillies Driving Schools
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <a
                         to="/EddiesDrivingSchool"

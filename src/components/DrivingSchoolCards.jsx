@@ -72,26 +72,26 @@ const DrivingSchoolCards = () => {
             </div>
             {/* <!-- Card --> */}
 
-            {/* <!-- Card --> */}
-            <div className="block rounded-lg bg-white shadow-xl text-left">
-              {/* <!-- Card image --> */}
+            
+            {/* <div className="block rounded-lg bg-white shadow-xl text-left">
+             
               <a href="#!">
                 <img className="rounded-t-lg w-auto h-auto" src={Qs} alt="" />
               </a>
 
-              {/* <!-- Card body --> */}
+             
               <div className="p-6">
-                {/* <!-- Title --> */}
+               
                 <h2 className="mb-2 text-xl font-bold tracking-wide text-black">
                   Q's Driving School
                 </h2>
 
-                {/* <!-- Text --> */}
+               
                 <p className="mb-4 text-base text-black">
                   Get to know this Driving School
                 </p>
 
-                {/* <!-- Button --> */}
+                
                 <Link
                   to="/QDrivingSchool"
                   className=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -121,29 +121,29 @@ const DrivingSchoolCards = () => {
                   </svg>
                 </a>
               </div>
-            </div>
-            {/* <!-- Card --> */}
+            </div> */}
+            
 
-            {/* <!-- Card --> */}
-            <div className="block rounded-lg bg-white shadow-xl text-left">
-              {/* <!-- Card image --> */}
+           
+            {/* <div className="block rounded-lg bg-white shadow-xl text-left">
+             
               <a href="#!">
                 <img className="rounded-t-lg" src={lilies} alt="" />
               </a>
 
-              {/* <!-- Card body --> */}
+          
               <div className="p-6">
-                {/* <!-- Title --> */}
+                
                 <h2 className="mb-2 text-xl font-bold tracking-wide text-black">
                   Two Lillies Drving School
                 </h2>
 
-                {/* <!-- Text --> */}
+                
                 <p className="mb-4 text-base text-black">
                   Get to know this Driving School
                 </p>
 
-                {/* <!-- Button --> */}
+                
                 <Link
                   to="/TwoliliesDrivingSchool"
                   className=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -173,8 +173,8 @@ const DrivingSchoolCards = () => {
                   </svg>
                 </a>
               </div>
-            </div>
-            {/* <!-- Card --> */}
+            </div> */}
+           
 
             {/* <!-- Card --> */}
             <div className="block rounded-lg bg-white shadow-xl text-left">

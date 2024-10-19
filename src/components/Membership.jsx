@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Membership = () => {
   return (
     <>
-      <div class="sm:ml-64">
+      <div>
         <section className="bg-gray-900">
           <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div className="container mx-auto">

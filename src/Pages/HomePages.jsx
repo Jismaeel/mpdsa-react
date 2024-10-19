@@ -11,10 +11,10 @@ import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import Loading from "../components/Loading";
 import msdsa1 from "../assets/img/mpddsa-02 1.webp";
+import PromoCarousel from "../components/PromoCouresal";
 
 const HomePages = () => {
   const [isLoading, setIsLoading] = useState(true);
- 
 
   useEffect(() => {
     // Simulate loading delay
@@ -30,15 +30,18 @@ const HomePages = () => {
   return (
     <>
       <SideNav />
-      <HeroSection />
-      <LogoDisplay />
-      <AboutUs />
-      <WhyChooseus />
-      <DrivingSchoolCards />
-      <Membership />
-      <FAQ />
-      <ContactUs />
-      <Footer />
+      <div className="sm:ml-64">
+        <HeroSection />
+        <LogoDisplay />
+        <AboutUs />
+        <WhyChooseus />
+        <PromoCarousel />
+        <DrivingSchoolCards />
+        <Membership />
+        <FAQ />
+        <ContactUs />
+        <Footer />
+      </div>
     </>
   );
 };

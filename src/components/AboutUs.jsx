@@ -3,7 +3,7 @@ import Msdsa2 from "../assets/img/mpddsa-01.webp";
 const AboutUs = () => {
   return (
     <>
-      <div id="Aboutus" className="sm:ml-64 ">
+      <div id="Aboutus">
         <section>
           <div className="block shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-gray-900">
             <div className="flex flex-wrap items-center">

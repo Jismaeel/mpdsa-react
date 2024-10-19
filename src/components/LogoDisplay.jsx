@@ -9,7 +9,7 @@ import Qs from "../assets/img/qs ds.webp";
 const LogoDisplay = () => {
   return (
     <>
-      <div class="sm:ml-64">
+      <div>
         <section className="lg:px-12 lg:pb-12">
           {/* <!-- logo display --> */}
           <div className="lg:py-5 py-10 px-12 bg-gray-900 lg:rounded-full items-center justify-center">
@@ -23,13 +23,16 @@ const LogoDisplay = () => {
               <Link to="/EddiesDrivingSchool" className="w-28 h-auto">
                 <img src={Eddies} />
               </Link>
-              <Link to="/TwoliliesDrivingSchool" className="w-28 h-auto">
+              <Link
+                to="https://twolilliesdrivingschool.weebly.com/"
+                className="w-28 h-auto"
+              >
                 <img src={lilies} />
               </Link>
               <Link to="/CraigsDrivingSchool" className="w-28 h-auto">
                 <img src={Craigs} />
               </Link>
-              <Link to="/QDrivingSchool" className="w-28 h-auto">
+              <Link to="https://qsdrivingschool.co.za/" className="w-28 h-auto">
                 <img src={Qs} />
               </Link>
             </div>

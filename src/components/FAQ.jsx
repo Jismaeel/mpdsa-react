@@ -18,7 +18,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="sm:ml-64">
+    <div>
       <section className="pt-16">
         <h2 className="text-center text-black px-6 text-3xl font-bold">
           Frequently asked questions

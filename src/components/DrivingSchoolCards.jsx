@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const DrivingSchoolCards = () => {
   return (
     <>
-      <div class="sm:ml-64 pt-16">
+      <div class="pt-16">
         <section className="mt-12">
           <h2
             id="DrivingSchools"

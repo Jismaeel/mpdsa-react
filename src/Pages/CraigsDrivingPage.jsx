@@ -249,14 +249,6 @@ const CraigsDrivingPage = () => {
         </div>
       </section>
 
-      <PromoCards
-        PromoImg={img}
-        WALink={"https://api.whatsapp.com/send?phone=+27728735516"}
-        PromoName={"Special Spring Promo"}
-        Lessons={"5 lessons"}
-        Price={"R899 and add car hire for R499"}
-      />
-
       <div className="bg-gray-900">
         <div className="bg-gray-900 py-10">
           <div className="flex flex-col items-center px-6 mx-auto">

@@ -8,13 +8,13 @@ import Promo from "../assets/img/promo.jpg";
 // Sample dynamic data fetching (replace with API calls or props)
 const fetchPromoData = () => {
   return [
-    {
-      title: "Weekend Special",
-      description: "Book with Skylas Driving School",
-      image: Promo,
-      whatsappMessage: "I am interested in this Promo",
-      phone: "+27721941247",
-    },
+    // {
+    //   title: "Weekend Special",
+    //   description: "Book with Skylas Driving School",
+    //   image: Promo,
+    //   whatsappMessage: "I am interested in this Promo",
+    //   phone: "+27721941247",
+    // },
     {
       title: "Mid-Oct Sale",
       description: "Book with Craigs Driving ",
@@ -45,6 +45,7 @@ const PromoCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: false,
   };
 
   const handleWhatsAppClick = (phone, message) => {
@@ -66,7 +67,8 @@ const PromoCarousel = () => {
 
   return (
     <div>
-      <div className="py-10">
+      <h2 className="text-black text-3xl font-bold text-center pt-14 pb-2">Promotions and Deals</h2>
+      <div className="pb-10">
         {promoData.length > 0 ? (
           promoData.length === 1 ? (
             <div className="p-4">

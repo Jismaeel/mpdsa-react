@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Promo1 from "../assets/img/promo1.jpg";
-import Promo from "../assets/img/promo.jpg";
+
 
 // Sample dynamic data fetching (replace with API calls or props)
 const fetchPromoData = () => {
@@ -11,17 +10,17 @@ const fetchPromoData = () => {
     // {
     //   title: "Weekend Special",
     //   description: "Book with Skylas Driving School",
-    //   image: Promo,
+    //   image: ,
     //   whatsappMessage: "I am interested in this Promo",
     //   phone: "+27721941247",
     // },
-    {
-      title: "Mid-Oct Sale",
-      description: "Book with Craigs Driving ",
-      image: Promo1,
-      whatsappMessage: "I am interested in this Promo",
-      phone: "+27782829282",
-    },
+    // {
+    //   title: "Mid-Oct Sale",
+    //   description: "Book with Craigs Driving ",
+    //   image: ,
+    //   whatsappMessage: "I am interested in this Promo",
+    //   phone: "+27782829282",
+    // },
   ];
 };
 
@@ -134,7 +133,7 @@ const PromoCarousel = () => {
             </Slider>
           )
         ) : (
-          <p>Loading promotions...</p>
+          <p className="text-center">Loading promotions...</p>
         )}
       </div>
 

@@ -5,8 +5,6 @@ import { toast } from "react-toastify";
 import { HashLink as Link } from "react-router-hash-link";
 import Loading from "../components/Loading";
 import { Helmet } from "react-helmet-async";
-import PromoCards from "../components/PromoCards";
-import img from "../assets/img/promo.jpg";
 
 const CraigsDrivingPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);

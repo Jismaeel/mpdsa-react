@@ -73,7 +73,7 @@ const DrivingSchoolCards = () => {
             {/* <!-- Card --> */}
 
             
-            <div className="block rounded-lg bg-white shadow-xl text-left">
+            {/* <div className="block rounded-lg bg-white shadow-xl text-left">
              
               <a href="#!">
                 <img className="rounded-t-lg w-auto h-auto" src={Qs} alt="" />
@@ -122,9 +122,8 @@ const DrivingSchoolCards = () => {
                 </a>
               </div>
             </div>
-            
+             */}
 
-           
             {/* <div className="block rounded-lg bg-white shadow-xl text-left">
              
               <a href="#!">

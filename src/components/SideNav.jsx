@@ -173,14 +173,14 @@ const SideNav = () => {
                         Skylas Driving School
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link
                         to="https://qsdrivingschool.co.za/"
                         className="block px-4 py-2 hover:bg-gray-600 hover:text-white "
                       >
                         Q's Driving Schools
                       </Link>
-                    </li>
+                    </li> */}
                     {/* <li>
                       <Link
                         to="/TwoliliesDrivingSchool"

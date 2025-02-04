@@ -1,4 +1,4 @@
-import AlertHero from "./AlertHero";
+import AlertHero from "./AlertHero"
 
 const HeroSection = () => {
   return (

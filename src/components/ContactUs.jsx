@@ -14,7 +14,7 @@ const ContactUs = () => {
 
     try {
       const response = await axios.post(
-        "https://node-server-c9zt.onrender.com/submit-contac",
+        "https://node-server-c9zt.onrender.com/submit-contact",
         {
           firstname,
           email,

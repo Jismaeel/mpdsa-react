@@ -38,13 +38,6 @@ const DrivingSchoolCards = () => {
                   Get to know this Driving School
                 </p>
 
-                {/* <!-- Button --> */}
-                <Link
-                  to="/SkylasDrivingSchool"
-                  className=" text-white  bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                >
-                  Book now
-                </Link>
 
                 <a
                   href="https://api.whatsapp.com/send?phone=+27721941247"
@@ -194,13 +187,6 @@ const DrivingSchoolCards = () => {
                   Get to know this Driving School
                 </p>
 
-                {/* <!-- Button --> */}
-                <Link
-                  to="/EddiesDrivingSchool"
-                  className=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                >
-                  Book now
-                </Link>
 
                 <a
                   href="https://api.whatsapp.com/send?phone=+27738918997"
@@ -246,13 +232,6 @@ const DrivingSchoolCards = () => {
                   Get to know this Driving School
                 </p>
 
-                {/* <!-- Button --> */}
-                <Link
-                  to="/CraigsDrivingSchool"
-                  className=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                >
-                  Book now
-                </Link>
 
                 <a
                   href="https://api.whatsapp.com/send?phone=+27728735516"
@@ -298,13 +277,7 @@ const DrivingSchoolCards = () => {
                   Get to know this Driving School
                 </p>
 
-                {/* <!-- Button --> */}
-                <Link
-                  to="/EbenezerDrivingSchool"
-                  className=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                >
-                  Book now
-                </Link>
+          
 
                 <a
                   href="https://api.whatsapp.com/send?phone=+27789639923"

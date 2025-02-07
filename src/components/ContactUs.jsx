@@ -12,21 +12,23 @@ const ContactUs = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    try {
-      const response = await axios.post(
-        "https://node-server-c9zt.onrender.com/submit-contact",
-        {
-          firstname,
-          email,
-          message,
-        }
-      );
-      
-      toast.success('Message sent successfully!');
-    } catch (error) {
-      console.error('Error during submission:', error);
-      toast.error('Failed to send message. Please try again.');
-    }
+  try {
+    const response = await axios.post(
+      "https://node-server-c9zt.onrender.com/submit-contact",
+      {
+        firstname,
+        email,
+        message,
+      }
+    );
+
+    toast.success("Message sent successfully!");
+  } catch (error) {
+    console.error("Error response:", error.response?.data || error.message);
+    toast.error(
+      error.response?.data || "Failed to send message. Please try again."
+    );
+  }
   };
 
   return (
